@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\englishController;
+use App\Http\Controllers\DashbordController;
+
 
 
 Route::get('/', function () {
@@ -11,6 +12,8 @@ Route::get('/', function () {
 
 Route::get("/hello",[WelcomeController::class,'sayDemo']);
 Route::get("/english",[WelcomeController::class,'englishCourse']);
+Route::get('/dashbord',[DashbordController::class,'index']);
+Route::get('/dashbord/sidebar',[DashbordController::class,'indexTwo']);
 
 // Route::get('/hello', function () {
 //     return('Hello World');
