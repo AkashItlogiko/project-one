@@ -13,5 +13,6 @@
 <p>Name:{{$dip}}</p>
 <hr>
 <p>Email:{{$email}}</p>
+<p>Demo:{{$demo2}}</p>
 </body>
 </html>

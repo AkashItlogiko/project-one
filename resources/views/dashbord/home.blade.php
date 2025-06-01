@@ -12,5 +12,6 @@
   <hr>
   <p>Name={{$namex}}</p>
   <p>Email={{$email}}</p>
+  <p>Demo={{$demo}}</p>
 </body>
 </html>
