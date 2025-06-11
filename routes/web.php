@@ -25,4 +25,4 @@ Route::get('/laravel', function () {
 });
 
 Route::get('/artical/{articalId}',[ArticalController::class,'index']);
-Route::get('/artical/pages/{pageNumber}',[ArticalController::class,'showArticalPage']);
+Route::get('/artical/pages/{pageNumber}/display/{type}',[ArticalController::class,'showArticalPage']);

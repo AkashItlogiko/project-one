@@ -10,7 +10,7 @@ class ArticalController extends Controller
     function index($articalId){
       return "Artical ID IS: " .$articalId;
     }
-    function showArticalPage($pageNumber){
-        return 'Artical Page Number IS:'.$pageNumber;
+    function showArticalPage($pageNumber,$type){
+        return 'Artical Page Number IS:'.$pageNumber.'Type IS: '.$type;
     }
 }
