@@ -22,3 +22,5 @@ Route::get('/dashbord/sidebar',[DashbordController::class,'indexTwo']);
 Route::get('/laravel', function () {
     return('Hello Laravel');
 });
+
+Route::get('/artical/{articalId}',[ArticalController::class,'index']);
