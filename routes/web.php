@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticalController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\DashbordController;
 
@@ -24,3 +25,4 @@ Route::get('/laravel', function () {
 });
 
 Route::get('/artical/{articalId}',[ArticalController::class,'index']);
+Route::get('/artical/pages/{pageNumber}',[ArticalController::class,'showArticalPage']);
