@@ -24,5 +24,5 @@ Route::get('/laravel', function () {
     return('Hello Laravel');
 });
 
-Route::get('/artical/{articalId}',[ArticalController::class,'index']);
-Route::get('/artical/pages/{pageNumber}/display/{type}',[ArticalController::class,'showArticalPage']);
+Route::get('/artical/{articalId?}',[ArticalController::class,'index']);
+Route::get('/artical/page/{pageNumber}',[ArticalController::class,'showArticalPage']);
