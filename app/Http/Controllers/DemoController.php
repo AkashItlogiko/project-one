@@ -15,4 +15,13 @@ class DemoController extends Controller
     function demo3(){
         return "Response Demo3";
     }
+    function demo4(){
+        return response()->json([
+        "Name"=>'Balir',
+        "Laravel"=>"Batch4",
+        "Itlogiko"=>"New"
+                        
+        ]
+        );
+    }
 }

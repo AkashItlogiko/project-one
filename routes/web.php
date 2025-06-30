@@ -30,3 +30,4 @@ Route::get('/artical/page/{pageNumber}',[ArticalController::class,'showArticalPa
 Route::get('/demo1',[DemoController::class,'demo1']);
 Route::post('/demo2',[DemoController::class,'demo2']);
 Route::put('/demo3',[DemoController::class,'demo3']);
+Route::post('/demo4',[DemoController::class,'demo4']);
