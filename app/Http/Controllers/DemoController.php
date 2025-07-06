@@ -20,7 +20,6 @@ class DemoController extends Controller
         "Name"=>'Balir',
         "Laravel"=>"Batch4",
         "Itlogiko"=>"New"
-
         ]
         );
     }
