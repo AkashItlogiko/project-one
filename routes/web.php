@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\DemosController;
 use App\Http\Controllers\ArticalController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\DashbordController;
@@ -34,4 +35,5 @@ Route::post('/demo4',[DemoController::class,'demo4']);
 Route::view("/loginform","forms.login");
 Route::view("/form","forms.form");
 Route::view("/contactform","forms.contact");
+Route::get("/demo1",[DemosController::class,'demo1']);
 
