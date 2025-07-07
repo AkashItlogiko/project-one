@@ -14,6 +14,6 @@ class SimonController extends Controller
         return 100;
     }
     function demo3(){
-        return response()->json(['Message'=>'Login Sucessfully']);
+        return redriect('/simon');
     }
 }
