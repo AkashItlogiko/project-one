@@ -38,5 +38,8 @@ Route::view("/contactform","forms.contact");
 Route::get("/simon",[SimonController::class,'sumon']);
 Route::get('/ruksana',[SimonController::class,'ruksana']);
 Route::get('/demos',[SimonController::class,'demo3']);
+Route::get('/image',[SimonController::class,'image']);
+Route::get('/images',[SimonController::class,'images']);
+Route::get('/new/{num1}/{num2}',[SimonController::class,'new']);
 
 

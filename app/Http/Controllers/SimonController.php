@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class SimonController extends Controller
 {
     //
@@ -15,5 +16,18 @@ class SimonController extends Controller
     }
     function demo3(){
         return redriect('/simon');
+    }
+    function image(){
+        $path=storage_path('app/public/img.jpg');;
+        return response()->download($path);
+    }
+    function images(){
+
+        return response('Hello')->header('my-token','Ostad1234');
+    }
+    function new(Request $request){
+          $a=$request->num1;
+          $b=$request->num2;
+          return $a+$b;
     }
 }
