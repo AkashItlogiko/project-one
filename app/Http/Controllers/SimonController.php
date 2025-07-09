@@ -30,4 +30,13 @@ class SimonController extends Controller
           $b=$request->num2;
           return $a+$b;
     }
+
+    function requestbody(Request $request){
+        $data=$request->input();
+        $a=$data['name1'];
+        $b=$data['name2'];
+        return $a+$b;
+    }
+
+
 }

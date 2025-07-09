@@ -41,5 +41,6 @@ Route::get('/demos',[SimonController::class,'demo3']);
 Route::get('/image',[SimonController::class,'image']);
 Route::get('/images',[SimonController::class,'images']);
 Route::get('/new/{num1}/{num2}',[SimonController::class,'new']);
+Route::post('/request',[SimonController::class,'requestbody']);
 
 
