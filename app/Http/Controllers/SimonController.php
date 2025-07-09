@@ -37,6 +37,12 @@ class SimonController extends Controller
         $b=$data['name2'];
         return $a+$b;
     }
-
+    function requestHeaders(Request $request){
+           $header=$request->header('my_key');
+           return $header;
+    }
+    function index(Request $request){
+          return $request->ip();
+    }
 
 }
