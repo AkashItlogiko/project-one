@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\ExtaController;
 use App\Http\Controllers\DemosController;
+use App\Http\Controllers\HelloController;
 use App\Http\Controllers\SimonController;
 use App\Http\Middleware\SecretMiddleware;
 use App\Http\Controllers\ArticalController;
@@ -56,5 +57,6 @@ Route::get('/middleware',function(){
  return 'This is a middleware page';
 })->middleware('throttle:20,1');
 
+Route::get('/',[HelloController::class,'Hello']);
 
 
