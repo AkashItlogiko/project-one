@@ -5,6 +5,7 @@ use App\Http\Controllers\DemoController;
 use App\Http\Controllers\ExtaController;
 use App\Http\Controllers\DemosController;
 use App\Http\Controllers\SimonController;
+use App\Http\Middleware\SecretMiddleware;
 use App\Http\Controllers\ArticalController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\DashbordController;
@@ -46,5 +47,14 @@ Route::get('/new/{num1}/{num2}',[SimonController::class,'new']);
 Route::post('/request',[SimonController::class,'requestbody']);
 Route::post('/requestheaders',[SimonController::class,'requestHeaders']);
 Route::post('/ip',[SimonController::class,'index']);
+
+Route::get('/secret',function(){
+  return 'This is a secret page';
+})->middleware(SecretMiddleware::class);
+
+Route::get('/middleware',function(){
+ return 'This is a middleware page';
+})->middleware('throttle:20,1');
+
 
 
