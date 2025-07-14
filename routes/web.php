@@ -57,6 +57,6 @@ Route::get('/middleware',function(){
  return 'This is a middleware page';
 })->middleware('throttle:20,1');
 
-Route::get('/',[HelloController::class,'Hello']);
+Route::get('/',[HelloController::class,'Hello']); 
 
 
