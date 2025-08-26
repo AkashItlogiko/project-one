@@ -38,7 +38,7 @@ Route::post('/demo4',[DemoController::class,'demo4']);
 Route::view("/loginform","forms.login");
 Route::view("/form","forms.form");
 Route::view("/contactform","forms.contact");
-Route::view('form.get',[ExtaController::class,' checkValidation']);
+Route::view('form.get',[ExtaController::class,'checkValidation']);
 Route::get("/simon",[SimonController::class,'sumon']);
 Route::get('/ruksana',[SimonController::class,'ruksana']);
 Route::get('/demos',[SimonController::class,'demo3']);
